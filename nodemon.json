@@ -1,0 +1,6 @@
+{
+  "watch": ["./src/main"],
+  "ext": "js,json,ts",
+  "ignore": ["node_modules"],
+  "exec": "set \"NODE_ENV=development\" && ts-node ./src/main/server.ts"
+}

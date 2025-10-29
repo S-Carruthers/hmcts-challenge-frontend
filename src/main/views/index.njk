@@ -1,0 +1,18 @@
+{% extends "base.njk" %}
+
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+  <h1>{{ heading }}</h1>
+  <p>{{ description }}</p>
+
+  <img src="/assets/images/govuk-icon-180.png" alt="Government Logo" class="government-logo" >
+
+  <section>
+    <h2>Features</h2>
+    <ul>
+      {% for feature in features %}
+        <li>{{ feature }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}
